@@ -1,0 +1,14 @@
+.converge{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* text-decoration: i; */
+    margin: auto;
+}
+.converge .image{
+    min-width: 400px;
+    width: 50%;
+    position: relative;
+}
