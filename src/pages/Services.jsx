@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../style/services.css'
 import { partnersimage } from '../images/svgexports'
 import { clientsimage } from '../images/svgexports'
+import { useState } from 'react'
 
 function Services() {
+    const [width,setWidth]=useState("")
+    useEffect(() => {
+        window.addEventListener("resize", updateWidthAndHeight);
+        return () => window.removeEventListener("resize", updateWidthAndHeight);
+      });
+    
+      const updateWidthAndHeight = () => {
+        console.log(window.innerWidth)
+        setWidth(window.innerWidth);
+      };
   return (
     <div className='services'>
         <div className="services-text">
@@ -21,8 +32,21 @@ function Services() {
                 <div className='feature'>Feature #1</div>
                 <div className='cnt-btn'>Let's Connect</div>
             </div>
+            
 
         </div>
+        { width<"420" ?
+        <div><br></br>
+        <br></br>
+
+        <br></br>
+
+        <br></br>
+        <br></br>
+
+        <br></br></div>
+         :null
+}
         <div className="clients">
             <div className="client-features">
                 <div style={{fontSize:'30px', fontWeight:'600', color:'#5D2EAB'}}>For Clients</div>

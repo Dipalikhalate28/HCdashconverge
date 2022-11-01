@@ -1,23 +1,26 @@
-.create-account{
+.create-account {
     min-width: 350px;
-    width: 70%;
+    width: 60%;
     background: #5D2EAB;
     margin: auto;
     border-radius: 30px;
-    padding: 30px;
+    padding: 50px;
     display: flex;
     justify-content: flex-end;
     color: #fff;
 }
-.create-account >div{
+
+.create-account>div {
     width: 50%;
     display: flex;
     flex-direction: column;
     min-width: 300px;
 }
-.create-account > div p{
+
+.create-account>div p {
     font-weight: 0;
 }
-.create-account div{
+
+.create-account div {
     margin: 20px 0;
 }
